@@ -7,18 +7,16 @@
 <div class="container-fluid content">
    <div class="container-fluid content">
      <div class="row">
-         <div class="col-md-4">
+         <div class="col-md-6">
              <h2>Quote Area</h2>
              <div class="row">
-                 <div *ngFor='let quote of quotes;let i= index' class="card" style="width: 25rem;">
+                 <div *ngFor='let quote of quotes;let i= index' class="card" style="width: 20rem;">
                 <div>
                    <p>Posted by: {{quote.publisher}}</p>
                    <p>Published by:{{quote.publishDate|dateCount}}</p>
+                   <hr>
                    <button (click)='toggleDetails(i)' class="btn btn-outline-info">More Info</button>
                 </div>
-                <!-- <div *ngIf = 'quote.showDescription'>
-                 <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
-                </div> -->
                 <div *ngIf='quote.showDescription'>
                     <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
                 </div>
