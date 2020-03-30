@@ -23,7 +23,6 @@ import { LikeComponent } from './like/like.component';
   ],
   imports: [
     BrowserModule,
-    // AppRoutingModule, 
     FormsModule
   ],
   providers: [],
