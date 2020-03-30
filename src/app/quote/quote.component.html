@@ -1,0 +1,34 @@
+<div class="jumbotron">
+    <!-- <h3><img src="https://freedesignfile.com/upload/2017/05/Beach-people-resting-HD-picture.jpg" alt="" srcset=""></h3> -->
+  <h2 class="text-centre">THE</h2>
+  <h1 class="text-centre">QUOTE</h1>
+  <h1 class="texte-centre">FIELD</h1>
+</div>
+<div class="container-fluid content">
+   <div class="container-fluid content">
+     <div class="row">
+         <div class="col-md-4">
+             <h2>Quote Area</h2>
+             <div class="row">
+                 <div *ngFor='let quote of quotes;let i= index' class="card" style="width: 25rem;">
+                <div>
+                   <p>Posted by: {{quote.publisher}}</p>
+                   <p>Published by:{{quote.publishDate|dateCount}}</p>
+                   <button (click)='toggleDetails(i)' class="btn btn-outline-info">More Info</button>
+                </div>
+                <!-- <div *ngIf = 'quote.showDescription'>
+                 <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
+                </div> -->
+                <!-- <div *ngIf='quote.showDescription'>
+                    <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
+                </div> -->
+                </div>
+             </div>
+         </div>
+         <div class="col-md-4">
+             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+         </div>
+     </div>
+     <p *ngIf='quotes.length > 5'>you have too many quotes</p>
+   </div>
+</div>
