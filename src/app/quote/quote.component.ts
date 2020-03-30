@@ -20,7 +20,12 @@ export class QuoteComponent implements OnInit {
 
   boringQuote(isBoring, index){
     if (isBoring) {
-      this.quotes.splice(index,1);
+      let toBoring = confirm('Are you sure you want to delete ${this.quotes[index].name}?')
+
+      if(toBoring){
+        this.quotes.splice(index,1);
+      }
+     
     }
   }
 

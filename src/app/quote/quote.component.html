@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron" id="intro">
     <!-- <h3><img src="https://freedesignfile.com/upload/2017/05/Beach-people-resting-HD-picture.jpg" alt="" srcset=""></h3> -->
   <h2 class="text-centre">THE</h2>
   <h1 class="text-centre">QUOTE</h1>
@@ -7,11 +7,11 @@
 <div class="container-fluid content">
    <div class="container-fluid content">
      <div class="row">
-         <div class="col-md-6">
+         <div class="col-md-5">
              <h2>Quote Area</h2>
              <div class="row">
                  <div *ngFor='let quote of quotes;let i= index' class="card" style="width: 20rem;">
-                <div>
+                <div id="{{i}}" appStrikethrough>{{quote.name}} {{quote.publishDate|dateCount|uppercase}}
                    <p>Posted by: {{quote.publisher}}</p>
                    <p>Published by:{{quote.publishDate|dateCount}}</p>
                    <hr>

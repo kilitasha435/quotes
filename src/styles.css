@@ -1,1 +1,14 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    src: local('sans-seif');
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#intro{
+    background-image: url('https://freedesignfile.com/upload/2017/05/Beach-people-resting-HD-picture.jpg');
+}
