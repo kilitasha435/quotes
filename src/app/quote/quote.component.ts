@@ -11,6 +11,7 @@ export class QuoteComponent implements OnInit {
     new Quote(1,'Author Holly', "Love yourself unconditionally first,then everything else is manageable.", 'Kevin Kili',new Date(2019,12,25)),
     new Quote(2,'Anonymous',"You are not lost, you are just early in the process", 'Eleanor Bwire',new Date(2019,5,17)),
     new Quote(3,'Barack Obama','Never let an old flame burn you', 'Stacy',new Date(2020,1,23)),
+    new Quote(4,'Tasha','It is not over unit it is all over','Eleanor',new Date(2019,8,21)),
 
   ];
 
@@ -20,7 +21,7 @@ export class QuoteComponent implements OnInit {
 
   boringQuote(isBoring, index){
     if (isBoring) {
-      let toBoring = confirm('Are you sure you want to delete ${this.quotes[index].name}?')
+      let toBoring = confirm('Are you sure you want to delete this quote')
 
       if(toBoring){
         this.quotes.splice(index,1);

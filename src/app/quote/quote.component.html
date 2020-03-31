@@ -7,10 +7,10 @@
 <div class="container">
    <div class="container-fluid content">
      <div class="row">
-         <div class="col-md-5">
+         <div class="col-md-4">
              <h2>Quote Area</h2>
              <div class="row">
-                 <div *ngFor='let quote of quotes;let i= index' class="card" style="width: 20rem;">
+                 <div *ngFor='let quote of quotes;let i= index' class="card quote" style="width: 20rem;">
                 <div id="{{i}}" appStrikethrough>{{quote.name}} {{quote.publishDate|dateCount|uppercase}}
                    <p>Posted by: {{quote.publisher}}</p>
                    <p>Published by:{{quote.publishDate|dateCount}}</p>
@@ -27,7 +27,7 @@
              <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
          </div>
      </div>
-     <p *ngIf='quotes.length > 5'>you have too many quotes</p>
+     <p *ngIf='quotes.length > 5'>ou have too many quotes</p>
    </div>
 </div>
 </div>
