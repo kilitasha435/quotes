@@ -1,0 +1,8 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face{
+    font-family: fantasy;
+    font-size: initial;
+    font-weight: normal;
+    src: local(fantasy);
+}

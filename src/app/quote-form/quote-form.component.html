@@ -1,29 +1,84 @@
-<div class="container-fluid">
-    <h2 class="text-center">Publish Quote</h2>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-5">
+  <div class="kili">
+    <div class="qu">
+      <h2 class="text-center">Publish Quote</h2>
     <hr>
+    </div>
+    <div class="fom">
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' class="form-right">
       <div class="form-group">
+        <div class="arthur">
         <label for="author">Author</label>
-        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+      </div>
+      <div class="input">
+        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.name" name="name" #name='ngModel'
+          required>
         {{newQuote.name}}
         <br>
+      </div>
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-            
-            Author is Required!
+
+          Author is Required!
         </div>
       </div>
-        <div class="form-group">
-          <label for="Quote">Quote</label>
-          <textarea id="quote" rows="3" class="form-control" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
-          <br>
-          <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-            Description is required.
-          </div>
+      <div class="form-group">
+        <div class="quto">
+        <label for="Quote">Quote</label>
+      </div>
+      <div class="text">
+        <textarea id="quote" rows="3" class="form-control" required [(ngModel)]="newQuote.description"
+          name="description" #description="ngModel"></textarea>
+        <br>
+      </div>
+        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+          Description is required.
         </div>
-        <div class="form-group">
-          <label for="publisher">Publisher</label>
-          <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher='ngModel'>
-        </div>
-        <button type="submit" class="btn btn-outline-success">Add Quote!</button>
+      </div>
+      <div class="form-group">
+        <div class="publisher">
+        <label for="publisher">Publisher</label>
+      </div>
+        <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher"
+          name="publisher" #publisher='ngModel'>
+      </div>
+      <div class="submit">
+      <button type="submit" class="btn btn-outline-success">Add Quote!</button>
+    </div>
     </form>
   </div>
+  </div>
+</div>
+</div>
+</div> -->
+
+<div class="container-fluid">
+  <h2 class="text-center">Publish Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' class="form-right">
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+      {{newQuote.name}}
+      <br>
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          
+          Author is Required!
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="Quote">Quote</label>
+        <textarea name="" id="" cols="30" id="quote" rows="5" class="form-control" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
+        <br>
+        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+          Description is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="publisher">Publisher</label>
+        <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher='ngModel'>
+      </div>
+      <button type="submit" class="btn btn-outline-success" id="add">Add Quote!</button>
+  </form>
+</div>
