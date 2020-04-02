@@ -1,19 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-@font-face{
+/* @font-face{
     font-family: fantasy;
     font-size: initial;
     font-weight: normal;
     src: local(fantasy);
-}
-/* #clare{ 
-    background-color: linear-gradient(to bottom, rgba(5, 10, 44, 0.52), rgba(13, 9, 48, 0.73)),
-    
 } */
-/* #clare{ */
-    /* background-image: linear-gradient(to bottom, rgba(5, 10, 44, 0.52), rgba(13, 9, 48, 0.73)); */
-    /* background: transparent; */
-/* } */
 h1{
     font-family: 'Special Elite', cursive;
     color: white;

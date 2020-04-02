@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   title = 'these are the wise quotes';
   quotes: Quote[] = [
-    new Quote(1,'Author Holly', "Love yourself unconditionally first,then everything else is manageable.", 'Kevin Kili',new Date(2019,12,25)),
-    new Quote(2,'Anonymous',"You are not lost, you are just early in the process", 'Eleanor Bwire',new Date(2019,5,17)),
-    new Quote(3,'Barack Obama','Never let an old flame burn you', 'Sheila',new Date(2020,1,23)),
-    new Quote(4,'Tasha','It is not over unit it is all over','Eleanor',new Date(2019,8,21)),
+    new Quote(1,'"Love yourself unconditionally first,then everything else is manageable.', "Author Holly ", 'Kevin Kili',new Date(2019,12,25)),
+    new Quote(2,'"You are not lost, you are just early in the process',"Paul Gichuki", 'Eleanor Bwire',new Date(2019,5,17)),
+    new Quote(3,'"Never let an old flame burn you','Eleanor', 'Sheila',new Date(2020,1,23)),
+    new Quote(4,'"It is not over unit it is all over','Tasha','Eleanor',new Date(2019,8,21)),
 
   ];
 
