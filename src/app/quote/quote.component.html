@@ -15,12 +15,13 @@
                     <div class="card-body">
                         <p class="card-text" id="eleanor">{{quote.name}}</p>
                         <div *ngIf='quote.showDescription'>
-                        <app-quote-detail  [quote]='quote' (isBoring)='boringQuote ($event,i)'></app-quote-detail>
+                        <app-quote-detail  [quote]='quote' (isBoring)='boringQuote ($event,i)' ></app-quote-detail>
                     </div>
                         <h3 class="card-title" appStrikethrough>{{quote.title}}  <button (click)='toggleDetails(i)' class="btn btn-outline-info">More Info</button></h3>
                        
                         <span class="card-subtitle mb-2">Posted by:<span id="name">{{quote.publisher}}</span><span id="date">on:{{quote.publishDate|dateCount|uppercase}}</span><span id="datecolor"></span></span>
                         
+
                     </div>
                 </div>
                </div>

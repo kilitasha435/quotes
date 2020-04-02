@@ -19,7 +19,16 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-
+  // numberOfDislikes : number = 0;
+  // dislikeButtonClick() {
+  //   this.numberOfDislikes++;
+  // }
+  // numberOfLikes : number = 0;
+  // likeButtonClick() {
+  //   this.numberOfLikes++;
+  // }
+ 
+ 
   boringQuote(isBoring, index){
     if (isBoring) {
       let toBoring = confirm('Are you sure you want to delete this quote')

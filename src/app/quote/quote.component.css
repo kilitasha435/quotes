@@ -1,11 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-/* @font-face{
+@font-face{
     font-family: fantasy;
     font-size: initial;
     font-weight: normal;
     src: local(fantasy);
-} */
+}
 h1{
     font-family: 'Special Elite', cursive;
     color: white;
@@ -60,4 +60,7 @@ h1{
     font-family: 'Handlee', cursive;
     font-weight: 570;
     font-size: 18px;
+  }
+  button{
+      background-color: blue;
   }
