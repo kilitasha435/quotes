@@ -1,46 +1,26 @@
-<div class="tasha">
+<div class="overlay">
     <div id="intro">
         <h2 class="text-centre">THE</h2>
         <h1 class="text-centre">QUOTE</h1>
         <h2 class="texte-centre">FIELD</h2>
     </div>
-    
-        <!-- <div class="container-fluid content"> -->
-            <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="kim">
-                        <h2>Quote Area</h2>
-                    </div>
+    <div class="container-fluid">
+       <div class="row">
+           <div class="col-sm-3">
+               <app-quote-form (addQuote) = "addNewQuote($event)" ></app-quote-form>
+           </div>
+           <div class="col-sm-9">
+               <div class="all-cards">
+                   <div *ngFor='let quote of quotes;let i= index' class="card" style="width: 25rem;">
                     <div class="card-body">
-                        <div *ngFor='let quote of quotes;let i= index' class="card quote" style="width: 20rem;"> 
-                            <div id="{{i}}" appStrikethrough>
-                                
-                                <app-quote-detail [quote]='quote' (isBoring)='boringQuote($event,i)'></app-quote-detail>
-                                <button (click)='toggleDetails(i)' class="btn btn-outline-info">More Info</button>
-                                <hr> 
-                            </div>
-                            
-                            <div *ngIf='quote.showDescription'>
-                                
-                                
-                                <div class="shy">{{quote.name}} {{quote.publishDate|dateCount|uppercase}}
-                                    <p>Posted by: {{quote.publisher}}</p>
-                                   </div>
-                                   <div class="pub">
-                                   <p>Published by:{{quote.publishDate|dateCount}}</p>
-                                   </div>
-                            </div>
-                        </div>
+                        <h3 class="card-title" appStrikethrough>{{quote.name}}   <button (click)='toggleDetails(i)' class="btn btn-outline-info">More Info</button></h3>
+                        <p class="card-text" id="eleanor">{{quote.name}}</p>
+                        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isBoring)='boringQuote'></app-quote-detail>
+                        <span class="card-subtitle mb-2">Posted by:<span id="name">{{quote.publisher}}</span><span id="date">on:{{quote.publishDate|dateCount|uppercase}}</span><span id="datecolor"></span></span>
                     </div>
                 </div>
-                <div class="form">
-                <div class="col-md-4"> 
-                    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-                 </div> 
-                 </div>
-            </div>
-            <p *ngIf='quotes.length > 5'>You have too many quotes</p>
-        </div>
-    <!-- </div> -->
+               </div>
+           </div>
+       </div>
+    </div>
 </div>
