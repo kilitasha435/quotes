@@ -14,6 +14,7 @@ export class QuoteDetailComponent implements OnInit {
   quoteBoring(boring:boolean){
     this.isBoring.emit(boring);
   }
+  
 
 
   constructor() { }
