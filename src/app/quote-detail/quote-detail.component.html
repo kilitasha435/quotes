@@ -1,11 +1,14 @@
 <p>{{quote.description}}</p>
+<!-- <p>{{quote.name}}</p> -->
 <p>This quote will be republished in {{quote.publishDate|dateCount}}</p>
 <br>
+<like-box></like-box>
+<br>
+<div class="break">
 <button (click)='quoteBoring(true)' class="btn btn-outline-danger" style="width: 5;" >Delete Quote</button>
+</div>
+<br>
 
-<!-- <button (click)="likeButtonClick()" class="btn btn-outline-success btn-sm  mr-3">upvote</button>
-<button (click)="dislikeButtonClick" class="btn btn-outline-danger btn-sm mr-3">downvote</button>
- -->
 
 
 

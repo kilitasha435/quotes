@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'like-box',
@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./like.component.css']
 })
 export class LikeComponent implements OnInit {
+  @Input() testName: number;
 
+  numberOfLikes : number = 0;
+  likeButtonClick() {
+    this.numberOfLikes++;
+  }
+
+  numberOfDislikes : number = 0;
+  dislikeButtonClick() {
+    this.numberOfDislikes++;
+  }
 
 
   constructor() { }
