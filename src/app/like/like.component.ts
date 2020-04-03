@@ -18,7 +18,6 @@ export class LikeComponent implements OnInit {
     this.numberOfDislikes++;
   }
 
-
   constructor() { }
 
   ngOnInit() {
