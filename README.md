@@ -49,5 +49,5 @@ To contact me kindly email kilikevin435@gmail.com
 The project uses the MIT licence
 https://opensource.org/licenses/MIT
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 
