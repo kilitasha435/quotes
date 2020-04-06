@@ -45,9 +45,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 To contact me kindly email kilikevin435@gmail.com
 
-## Licence
-The project uses the MIT licence
-https://opensource.org/licenses/MIT
+## License
 
-
+- _MIT License:_[LICENSE MIT](./LICENSE)
+- Copyright (c) 2020 **Kevin Lili**
 
